@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-image: radial-gradient(circle, #e2725b , #94b0da);
+        animation: pulse 2s infinite;
+      }
+      .title {
+        color: #495159;
+        font-size: 100px;
+        font-family:"Consolas", monospace;
+        animation: pulse 2s infinite;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 250ms;
+      }
+      a:hover{
+        color: black;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <h1 class="title">
+        <a href="testing.html"> Hello. </a>
+      </h1>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+
+	<head>
+
+		<style>
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		body{
+			height:100vh;
+			width:100vw;
+			margin: 0;
+			background-image: radial-gradient(circle, #e2725b, #94b0da);
+			overflow: hidden;
+		}
+		.home{
+			font-family:"Consolas", monospace;
+			font-size: 50px;
+			position: fixed;
+			top: 15px;
+			right: 50%;
+			color: #495159;
+			text-decoration: none;
+		}
+		.home:hover{
+			color: black;
+			transition: all 250ms;
+		}
+		.image_track{
+			position: absolute;
+			display: flex;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+			scroll-snap-align: center;
+		}
+		.image{
+			margin: 40px;
+            height: 80vh;
+			box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+		}
+		.image:hover{
+			transform: scale(1.05);
+			transition: all 0.5s;
+		}
+		.buttons{
+			transform: scale(3);
+			position: fixed;
+			bottom: 50px;
+			right: 50%;
+			display: inline-flex;
+			gap: 20px;
+		}
+	</style>
+	</head>
+
+	<body>
+
+		<div class="image_track">
+
+			<a class="home" href="index.html"> Home </a>
+
+			<img class="image" id="image1" src="Pics\IMG_5582.JPG">
+			<img class="image" id="image2" src="Pics\IMG_5646.JPG">
+			<img class="image" id="image3" src="Pics\IMG_8501.JPG">
+			<img class="image" id="image4" src="Pics\IMG_5219 (2).JPG">
+			<img class="image" id="image5" src="Pics\IMG_5736.JPG">
+			<img class="image" id="image6" src="Pics\IMG_5842.JPG">
+			<img class="image" id="image7" src="Pics\IMG_5577.JPG">
+
+			<div class="buttons">
+
+				 <a class="button" href="#image1"> <button></button> </a>
+				 <a class="button" href="#image2"> <button></button> </a>
+				 <a class="button" href="#image3"> <button></button> </a>
+				 <a class="button" href="#image4"> <button></button> </a>
+				 <a class="button" href="#image5"> <button></button> </a>
+				 <a class="button" href="#image6"> <button></button> </a>
+				 <a class="button" href="#image7"> <button></button> </a>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
