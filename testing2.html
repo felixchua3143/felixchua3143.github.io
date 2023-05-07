@@ -11,7 +11,7 @@
 		}
 
 		body{
-			height:100vh;
+			height: 100vh;
 			margin: 0;
 			background-image: radial-gradient(circle, #e2725b, #94b0da);
 		}
@@ -19,7 +19,7 @@
 			font-family:"Consolas", monospace;
 			font-size: 50px;
 			position: fixed;
-			top: 25px;
+			bottom: 15px;
 			right: 50%;
 			color: #495159;
 			text-decoration: none;
@@ -28,6 +28,45 @@
 			color: black;
 			transform: scale(1.1);
 			transition: all 250ms;
+		}
+		.wrapper{
+			display: grid;
+			grid-template-rows: 1fr 0.3fr;
+			overflow: hidden;
+			height: 100vh;
+		}
+		.image-track{
+			display: flex;
+			overflow: hidden;
+			scroll-behavior: smooth;
+		}
+		.image{
+			height: 70vh;
+			margin: 20px;
+			box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+		}
+		.image:hover{
+			transform: scale(1.05);
+			transition: all ease 300ms
+		}
+		.small-image-track{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: scroll;
+			overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+		}
+		.small-image{
+			height: 20vh;
+            filter: saturate(0);
+			box-shadow: 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+		}
+		.small-image:hover{
+			transform: scale(1.05);
+			transition: all ease 300ms;
+            filter: saturate(1);
 		}
 	</style>
 	</head>
@@ -38,17 +77,29 @@
 
 			<a class="home" href="index.html"> Home </a>
 
-		<div class="image-track">
+			<div class="image-track">
 
-			<img class="image" id="image1" src="Pics\IMG_5582.webp">
-			<img class="image" id="image2" src="Pics\IMG_5646.webp">
-			<img class="image" id="image3" src="Pics\IMG_8501.webp">
-			<img class="image" id="image4" src="Pics\IMG_5219 (2).webp">
-			<img class="image" id="image5" src="Pics\IMG_5736.webp">
-			<img class="image" id="image6" src="Pics\IMG_5842.webp">
-			<img class="image" id="image7" src="Pics\IMG_5577.webp">
+				<img class="image" id="image1" src="Pics\IMG_5582.webp">
+				<img class="image" id="image2" src="Pics\IMG_5646.webp">
+				<img class="image" id="image3" src="Pics\IMG_8501.webp">
+				<img class="image" id="image4" src="Pics\IMG_5219 (2).webp">
+				<img class="image" id="image5" src="Pics\IMG_5736.webp">
+				<img class="image" id="image6" src="Pics\IMG_5842.webp">
+				<img class="image" id="image7" src="Pics\IMG_5577.webp">
 
-		</div>
+			</div>
+
+			<nav class="small-image-track">
+
+			 	<a href="#image1"> <img class="small-image" id="small-image1" src="Pics\IMG_5582.webp"> </a>
+				<a href="#image2"> <img class="small-image" id="small-image1" src="Pics\IMG_5646.webp"> </a>
+				<a href="#image3"> <img class="small-image" id="small-image1" src="Pics\IMG_8501.webp"> </a>
+				<a href="#image4"> <img class="small-image" id="small-image1" src="Pics\IMG_5219 (2).webp"> </a>
+				<a href="#image5"> <img class="small-image" id="small-image1" src="Pics\IMG_5736.webp"> </a>
+				<a href="#image6"> <img class="small-image" id="small-image1" src="Pics\IMG_5842.webp"> </a>
+				<a href="#image7"> <img class="small-image" id="small-image1" src="Pics\IMG_5577.webp"> </a>
+
+			</nav>
 
 		</div>
 	</body>
@@ -112,5 +163,12 @@
 			height: 50px;
 			width: 50px;
 		}
+
+			<img class="small-image" id="small-image2" src="Pics\IMG_5646.webp">
+			<img class="small-image" id="small-image3" src="Pics\IMG_8501.webp">
+			<img class="small-image" id="small-image4" src="Pics\IMG_5219 (2).webp">
+			<img class="small-image" id="small-image5" src="Pics\IMG_5736.webp">
+			<img class="small-image" id="small-image6" src="Pics\IMG_5842.webp">
+			<img class="small-image" id="small-image7" src="Pics\IMG_5577.webp">
 
 -->
