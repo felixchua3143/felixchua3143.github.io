@@ -10,49 +10,23 @@
     
     <style>
        
-        .body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: auto;
+        body{
+            height: 100vh;
+            margin: 0;
             background-image: linear-gradient(to left, #e2725b, #94b0da);
+            animation: gradient 60s ease infinite;
             background-size: 400%;
-            animation: bg-animation 60s infinite alternate;
-            
-        }
-
-        @keyframes bg-animation {
+		}
+        @keyframes gradient {
             0% {
-                background-position: left;
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
             }
             100% {
-                background-position: right;
+                background-position: 0% 50%;
             }
-        }
-        button {
-            position:fixed; 
-            top: 0; 
-            right: 56px;
-            background-color: transparent;
-            color: #495159;
-            text-align: center;
-            font-size: 28px; 
-            border: none;
-            -webkit-transition: all 0.5s; 
-            -moz-transition: all 0.5s; 
-            -o-transition: all 0.5s;
-            transition: all 0.5s;
-            font-family:"Consolas", monospace;
-        }
-        button:hover {
-            position: fixed;
-            background-color: transparent;
-            color: black;
         }
         img {
             display: block;
@@ -88,33 +62,10 @@
             transform: scale(1.05);
             filter: saturate(1);
         }
-        .credit{
-            font-family:"Consolas", monospace;
-            position: fixed; 
-            bottom: 0; 
-            width: 100%; 
-            text-align: center;
-        }
-        a{
-            color: #495159;
-            text-decoration: none;
-        }
     </style>
 </head>
 
 <body>
-
-<div class="body">
-
-    <div class="home">
-
-        <a href="index.html"> 
-
-            <button> Home </button> 
-    
-        </a>
-
-    </div>
 
     <div class="wrapper">
 
