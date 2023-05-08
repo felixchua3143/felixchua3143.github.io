@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<head>
 
@@ -12,15 +11,16 @@
 		}
 
 		body{
-			height: 100vh;
+			height:100vh;
 			margin: 0;
 			background-image: radial-gradient(circle, #e2725b, #94b0da);
+			overflow-y: hidden;
 		}
 		.home{
 			font-family:"Consolas", monospace;
 			font-size: 50px;
 			position: fixed;
-			bottom: 15px;
+			top: 25px;
 			right: 50%;
 			color: #495159;
 			text-decoration: none;
@@ -30,112 +30,10 @@
 			transform: scale(1.1);
 			transition: all 250ms;
 		}
-		.wrapper{
-			display: grid;
-			grid-template-rows: 1fr 0.2fr;
-			overflow: hidden;
-			height: 100vh;
-		}
-		.image-track{
-			display: flex;
-			overflow: hidden;
-			scroll-behavior: smooth;
-		}
-		.image{
-			margin-top: 50px;
-			height: 75vh;
-			box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
-		}
-		.image:hover{
-			transform: scale(1.05);
-			transition: all ease 300ms
-		}
-		.small-image-track{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			overflow: scroll;
-			overflow-y: hidden;
-            scroll-behavior: smooth;
-		}
-		.small-image{
-			height: 10vh;
-            filter: saturate(0);
-			box-shadow: 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
-		}
-		.small-image:hover{
-			transform: scale(1.05);
-			transition: all ease 300ms;
-            filter: saturate(1);
-		}
-	</style>
-	</head>
-
-	<body>
-
-		<div class="wrapper">
-
-			<a class="home" href="index.html"> Home </a>
-
-			<div class="image-track">
-
-				<img class="image" id="image1" src="Pics\IMG_5582.webp">
-				<img class="image" id="image2" src="Pics\IMG_5646.webp">
-				<img class="image" id="image3" src="Pics\IMG_8501.webp">
-				<img class="image" id="image4" src="Pics\IMG_5219 (2).webp">
-				<img class="image" id="image5" src="Pics\IMG_5736.webp">
-				<img class="image" id="image6" src="Pics\IMG_5842.webp">
-				<img class="image" id="image7" src="Pics\IMG_5577.webp">
-
-			</div>
-
-			<nav class="small-image-track">
-
-			 	<a href="#image1"> <img class="small-image" id="small-image1" src="Pics\IMG_5582.webp"> </a>
-				<a href="#image2"> <img class="small-image" id="small-image1" src="Pics\IMG_5646.webp"> </a>
-				<a href="#image3"> <img class="small-image" id="small-image1" src="Pics\IMG_8501.webp"> </a>
-				<a href="#image4"> <img class="small-image" id="small-image1" src="Pics\IMG_5219 (2).webp"> </a>
-				<a href="#image5"> <img class="small-image" id="small-image1" src="Pics\IMG_5736.webp"> </a>
-				<a href="#image6"> <img class="small-image" id="small-image1" src="Pics\IMG_5842.webp"> </a>
-				<a href="#image7"> <img class="small-image" id="small-image1" src="Pics\IMG_5577.webp"> </a>
-
-			</nav>
-
-		</div>
-	</body>
-
-</html>
-
-<!-- <div class="image_track">
-
-				<a class="home" href="index.html"> Home </a>
-
-				<img class="image" id="image1" src="Pics\IMG_5582.webp">
-				<img class="image" id="image2" src="Pics\IMG_5646.webp">
-				<img class="image" id="image3" src="Pics\IMG_8501.webp">
-				<img class="image" id="image4" src="Pics\IMG_5219 (2).webp">
-				<img class="image" id="image5" src="Pics\IMG_5736.webp">
-				<img class="image" id="image6" src="Pics\IMG_5842.webp">
-				<img class="image" id="image7" src="Pics\IMG_5577.webp">
-
-			</div>
-
-			<div class="buttons">
-
-				<a class="button" href="#image-1"> <button></button> </a>
-				<a class="button" href="#image-2"> <button></button> </a>
-				<a class="button" href="#image-3"> <button></button> </a>
-				<a class="button" href="#image-4"> <button></button> </a>
-				<a class="button" href="#image-5"> <button></button> </a>
-				<a class="button" href="#image-6"> <button></button> </a>
-				<a class="button" href="#image-7"> <button></button> </a>
-
-			</div>
-
 		.image_track{
-		display: flex;
-		align-items: center;
-		height: 100vh;
+			display: flex;
+			align-items: center;
+			height: 100vh;
 		}
 		.image{
 			height: 60vh;
@@ -163,12 +61,38 @@
 			height: 50px;
 			width: 50px;
 		}
+	</style>
+	</head>
 
-			<img class="small-image" id="small-image2" src="Pics\IMG_5646.webp">
-			<img class="small-image" id="small-image3" src="Pics\IMG_8501.webp">
-			<img class="small-image" id="small-image4" src="Pics\IMG_5219 (2).webp">
-			<img class="small-image" id="small-image5" src="Pics\IMG_5736.webp">
-			<img class="small-image" id="small-image6" src="Pics\IMG_5842.webp">
-			<img class="small-image" id="small-image7" src="Pics\IMG_5577.webp">
+	<body>
 
--->
+		<div class="image_track">
+
+			<a class="home" href="index.html"> Home </a>
+
+			<img class="image" id="image-1" src="Pics\IMG_5582.JPG">
+			<img class="image" id="image-2" src="Pics\IMG_5646.JPG">
+			<img class="image" id="image-3" src="Pics\IMG_8501.JPG">
+			<img class="image" id="image-4" src="Pics\IMG_5219 (2).JPG">
+			<img class="image" id="image-5" src="Pics\IMG_5736.JPG">
+			<img class="image" id="image-6" src="Pics\IMG_5842.JPG">
+			<img class="image" id="image-7" src="Pics\IMG_5577.JPG">
+
+		</div>
+
+		<div class="buttons">
+
+			<a class="button" href="#image-1"> <button></button> </a>
+			<a class="button" href="#image-2"> <button></button> </a>
+			<a class="button" href="#image-3"> <button></button> </a>
+			<a class="button" href="#image-4"> <button></button> </a>
+			<a class="button" href="#image-5"> <button></button> </a>
+			<a class="button" href="#image-6"> <button></button> </a>
+			<a class="button" href="#image-7"> <button></button> </a>
+
+		</div>
+
+
+	</body>
+
+</html>
