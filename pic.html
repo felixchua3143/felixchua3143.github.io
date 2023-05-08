@@ -10,49 +10,23 @@
     
     <style>
        
-        .body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: auto;
+        body{
+            height: 100vh;
+            margin: 0;
             background-image: linear-gradient(to left, #e2725b, #94b0da);
+            animation: gradient 60s ease infinite;
             background-size: 400%;
-            animation: bg-animation 60s infinite alternate;
-            
-        }
-
-        @keyframes bg-animation {
+		}
+        @keyframes gradient {
             0% {
-                background-position: left;
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
             }
             100% {
-                background-position: right;
+                background-position: 0% 50%;
             }
-        }
-        button {
-            position:fixed; 
-            top: 0; 
-            right: 56px;
-            background-color: transparent;
-            color: #495159;
-            text-align: center;
-            font-size: 28px; 
-            border: none;
-            -webkit-transition: all 0.5s; 
-            -moz-transition: all 0.5s; 
-            -o-transition: all 0.5s;
-            transition: all 0.5s;
-            font-family:"Consolas", monospace;
-        }
-        button:hover {
-            position: fixed;
-            background-color: transparent;
-            color: black;
         }
         img {
             display: block;
@@ -66,6 +40,7 @@
         }
         .gallery {
             overflow: scroll;
+            overflow-y: hidden;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
         }
@@ -87,73 +62,51 @@
             transform: scale(1.05);
             filter: saturate(1);
         }
-        .credit{
+        .home{
+            position: fixed;
             font-family:"Consolas", monospace;
-            position: fixed; 
-            bottom: 0; 
-            width: 100%; 
-            text-align: center;
-        }
-        a{
-            color: #495159;
+            font-size: 30px;
+            right: 50px;
+            color:#495159;
             text-decoration: none;
+        }
+        .home:hover{
+            color: black;
+            transform: scale(1.1);
+            transition: all ease 250ms;
         }
     </style>
 </head>
 
 <body>
 
-<div class="body">
-
-    <div class="home">
-
-        <a href="index.html"> 
-
-            <button> Home </button> 
-    
-        </a>
-
-    </div>
+    <a class="home" href="index.html"> Home </a>
 
     <div class="wrapper">
 
         <nav class="lil-nav">
 
-            <a href="#image-1"> <img class="lil-nav__img" src="Pics\IMG_5582.JPG"/> </a>
-
-            <a href="#image-2"> <img class="lil-nav__img" src="Pics\IMG_5646.JPG"/> </a>
-            
-            <a href="#image-3"> <img class="lil-nav__img" src="Pics\IMG_8501.JPG"/> </a>
-
-            <a href="#image-4"> <img class="lil-nav__img" src="Pics\IMG_5219 (2).JPG"/> </a>
-
-            <a href="#image-5"> <img class="lil-nav__img" src="Pics\IMG_5577.JPG"/> </a>
-
-            <a href="#image-6"> <img class="lil-nav__img" src="Pics\IMG_5736.JPG"/> </a>
-
-            <a href="#image-7"> <img class="lil-nav__img" src="Pics\IMG_5842.JPG"/> </a>
-
-            <a href="#image-8"> <img class="lil-nav__img" src="Pics\IMG_5376.JPG" /> </a>
+            <a href="#image-1"> <img class="lil-nav__img" src="Pics\IMG_5582.webp"/> </a>
+            <a href="#image-2"> <img class="lil-nav__img" src="Pics\IMG_5646.webp"/> </a>
+            <a href="#image-3"> <img class="lil-nav__img" src="Pics\IMG_8501.webp"/> </a>
+            <a href="#image-4"> <img class="lil-nav__img" src="Pics\IMG_5219 (2).webp"/> </a>
+            <a href="#image-5"> <img class="lil-nav__img" src="Pics\IMG_5577.webp"/> </a>
+            <a href="#image-6"> <img class="lil-nav__img" src="Pics\IMG_5736.webp"/> </a>
+            <a href="#image-7"> <img class="lil-nav__img" src="Pics\IMG_5842.webp"/> </a>
+            <a href="#image-8"> <img class="lil-nav__img" src="Pics\IMG_5376.webp" /> </a>
 
           </nav>
 
           <div class="gallery">
 
-            <img class="gallery__img" id="image-1" src="Pics\IMG_5582.JPG" />
-
-            <img class="gallery__img" id="image-2" src="Pics\IMG_5646.JPG" />
-
-            <img class="gallery__img" id="image-3" src="Pics\IMG_8501.JPG" />
-
-            <img class="gallery__img" id="image-4" src="Pics\IMG_5219 (2).JPG" />
-
-            <img class="gallery__img" id="image-5" src="Pics\IMG_5577.JPG" />
-
-            <img class="gallery__img" id="image-6" src="Pics\IMG_5736.JPG" />
-
-            <img class="gallery__img" id="image-7" src="Pics\IMG_5842.JPG" />
-
-            <img class="gallery__img" id="image-8" src="Pics\IMG_5376.JPG">
+            <img class="gallery__img" id="image-1" src="Pics\IMG_5582.webp" />
+            <img class="gallery__img" id="image-2" src="Pics\IMG_5646.webp" />
+            <img class="gallery__img" id="image-3" src="Pics\IMG_8501.webp" />
+            <img class="gallery__img" id="image-4" src="Pics\IMG_5219 (2).webp" />
+            <img class="gallery__img" id="image-5" src="Pics\IMG_5577.webp" />
+            <img class="gallery__img" id="image-6" src="Pics\IMG_5736.webp" />
+            <img class="gallery__img" id="image-7" src="Pics\IMG_5842.webp" />
+            <img class="gallery__img" id="image-8" src="Pics\IMG_5376.webp">
             
           </div>
 
