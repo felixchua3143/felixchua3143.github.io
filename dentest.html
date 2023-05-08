@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+      }
+      .image {
+        width: 100vw;
+        height: 100%;
+        object-fit: contain;
+      }
+      .image-track {
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+      }
+      .image-wrap {
+        width: 100vw;
+        height: 60vh;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: center">
+        <h1>Image Gallery</h1>
+      </div>
+      <div class="image-track">
+        <div class="image-wrap" id="1">
+          <img class="image" src="Pics\IMG_5582.webp" />
+        </div>
+        <div class="image-wrap" id="2">
+          <img class="image" id="2" src="Pics\IMG_5646.webp" />
+        </div>
+        <div class="image-wrap" id="3">
+          <img class="image" id="3" src="Pics\IMG_8501.webp" />
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+      </div>
+    </div>
+  </body>
+</html>
