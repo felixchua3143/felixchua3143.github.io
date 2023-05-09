@@ -16,6 +16,11 @@
 			background-image: radial-gradient(circle, #e2725b, #94b0da);
 			overflow-y: hidden;
 		}
+		.wrapper{
+			height: 100vh;
+			margin: 0;
+			display: grid;
+		}
 		.home{
 			font-family:"Consolas", monospace;
 			font-size: 50px;
@@ -44,22 +49,8 @@
 			transform: scale(1.1);
 			transition: all 250ms;
 		}
-		.buttons{
-			position: fixed;
-			bottom: 50px;
-			left: 600px;
-			display: flex;
-			gap: 50px;
-		}
-		.button{
-			border-radius: 50%;
-		}
-		button{
-			padding: 0;
-			border-radius: 50%;
-			background-color: #495159;
-			height: 50px;
-			width: 50px;
+		.small-image-track{
+
 		}
 	</style>
 	</head>
@@ -84,8 +75,6 @@
 
 			<div class="small-image-track">
 
-				<a class="home" href="index.html"> Home </a>
-
 				<img class="small-image" id="small-image1" src="Pics\IMG_5582.webp">
 				<img class="small-image" id="small-image2" src="Pics\IMG_5646.webp">
 				<img class="small-image" id="small-image3" src="Pics\IMG_8501.webp">
@@ -93,6 +82,8 @@
 				<img class="small-image" id="small-image5" src="Pics\IMG_5736.webp">
 				<img class="small-image" id="small-image6" src="Pics\IMG_5842.webp">
 				<img class="small-image" id="small-image7" src="Pics\IMG_5577.webp">
+
+			</div>
 
 		</div>
 
