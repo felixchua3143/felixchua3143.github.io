@@ -5,6 +5,9 @@
 	<head>
 
 		<style>
+            html{
+                scroll-behavior: smooth;
+            }
             body{
                 display: grid;
                 grid-template-rows: 0.3fr 1fr 0.3fr;
@@ -14,6 +17,7 @@
             }
             .image-track{
                 display: flex;
+                overflow: hidden;
             }
             .image{
                 height: 60vh;
@@ -23,6 +27,7 @@
             .small-image-track{
                 display: flex;
                 height: 20vh;
+                overflow-x: scroll;
             }
             .small-image{
                 height: 20vh;
