@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<head> <title> example </title>
+<head>
+
+    <title> example </title>
+    <meta charset="utf=8">
 
 <style>
 
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#495159;
+        height: 10vh;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color:#495159 ;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-family:"Consolas", monospace;
+        font-size: 200%;
+    }
 </style>
 
 </head>
 
 <body> 
 
-    <div>
-        hi google
+    <div class="nav-bar">
+
+        <ul>
+
+            <li> <a href="default.asp"> Home </a> </li>
+            <li> <a href="contact.asp"> Contact </a> </li>
+            <li> <a href="about.asp"> About </a> </li>
+
+        </ul>
+
     </div>
+
+
 
 </body>
 
