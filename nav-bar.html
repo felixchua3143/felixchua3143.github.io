@@ -13,16 +13,58 @@
 
         body{
             height: 100vh;
-
             margin: 0;
+            background-image: linear-gradient(to left, #e2725b, #94b0da);
+            animation: gradient 60s ease infinite;
+            background-size: 400%;
+		}
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
-
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            }
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        li a{
+            font-family:"Consolas", monospace;
+            font-size: xx-large;
+            text-decoration: none;
+            color: #495159;
+        }
+        li a:hover{
+            color: white;
+            transition: all 250ms ease;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        .big-wrapper{
+           display: grid;
+           grid-template-rows: 5fr 1fr;
+           height: 100vh;
+        }
+        .image-track{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 
 </head>
@@ -32,10 +74,32 @@
     <div class="nav-bar">
 
         <ul>
-            <li> Home </li>
-            <li> Contact </li>
-            <li> About Me </li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+
         </ul>
+
+    </div>
+
+    <div class="big-wrapper">
+
+        <div class="image-track">
+
+            <div class="image-wrapper">
+
+                <img class="gallery-image" id="image-2" src="Pics\IMG_5646.webp" />
+
+            </div>
+
+            <div class="image-wrapper">
+
+                <img class="gallery__img" id="image-1" src="Pics\IMG_5582.webp" />
+
+            </div>
+
+        </div>
 
     </div>
 
