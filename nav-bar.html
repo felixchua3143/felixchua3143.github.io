@@ -51,13 +51,8 @@
             color: white;
             transition: all 250ms ease;
         }
-        img{
-            display: block;
-            max-width: 100%;
-        }
         .big-wrapper{
            display: grid;
-           grid-template-rows: 5fr 1fr;
            height: 100vh;
         }
         .image-track{
@@ -65,9 +60,21 @@
             justify-content: center;
             align-items: center;
         }
-        .image-wrapper{
-            height: 60vh;
+        .image-wrapper {
             width: 100vw;
+            height: 80vh;
+        }
+        .image {
+            width: 100vw;
+            height: 100%;
+            object-fit: contain;
+        }
+        .small-image-track{
+            display: flex;
+        }
+        .small-image{
+            height: 10vh;
+            width: 10vw;
         }
     </style>
 
@@ -75,54 +82,41 @@
 
 <body>
 
-    <div class="nav-bar">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-
-        </ul>
-
-    </div>
-
     <div class="big-wrapper">
+
+        <div class="nav-bar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+
+            </ul>
+
+        </div>
 
         <div class="image-track">
 
             <div class="image-wrapper">
 
-                <img class="gallery-image" id="image-1" src="Pics\IMG_5582.webp" />
+                <img class="image" id="image-1" src="Pics\IMG_5582.webp" />
 
             </div>
 
             <div class="image-wrapper">
 
-               <img class="gallery-image" id="image-2" src="Pics\IMG_5646.webp" />
+                <img class="image" id="image-2" src="Pics\IMG_5646.webp" />
 
             </div>
 
             <div class="image-wrapper">
 
-                <img class="gallery-image" id="image-3" src="Pics\IMG_8501.webp" />
+                <img class="image" id="image-3" src="Pics\IMG_8501.webp" />
 
-             </div>
-
-             <div class="image-wrapper">
-
-                <img class="gallery-image" id="image-4" src="Pics\IMG_5219 (2).webp" />
-
-             </div>
-
-             <div class="image-wrapper">
-
-                <img class="gallery-image" id="image-5" src="Pics\IMG_5577.webp" />
-
-             </div>
+            </div>
 
         </div>
-
 
     </div>
 
