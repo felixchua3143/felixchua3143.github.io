@@ -10,6 +10,7 @@ body{
     background-color: #495159;
     width: 173px;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+    border: 1px solid whitesmoke;
 }
 ul {
     list-style-type: none;
@@ -23,7 +24,7 @@ li a{
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 li a:hover{
     color: black;
