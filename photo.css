@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    background-color: whitesmoke;
+    overflow-y: hidden;
+}
+.nav-bar{
+    background-color: #495159;
+    width: 173px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin-left: 5%;
+}
+li a{
+    font-family:"Consolas", monospace;
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: black;
+    transition: all 250ms ease;
+}
+.big-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 0.5%;
+    overflow-y: scroll;
+}
+img{
+    height: 50vh;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+}
+img:hover{
+    transform: scale(1.05);
+    transition: all ease 400ms;
+}
