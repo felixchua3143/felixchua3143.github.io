@@ -16,17 +16,23 @@ body{
     margin: 0;
     padding: 0;
 }
-.nav-bar li{
+.nav-bar li, .dropdown-content{
     margin-left: 5%;
 }
-.nav-bar li a{
-    display: block;
+.nav-bar li a, .dropdown, .dropdown-content{
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: whitesmoke;
 }
-.nav-bar li a:hover{
+.dropdown{
+    list-style-type: none;
+    margin-left: 5%;
+}
+.dropdown-content{
+    font-size: x-large
+}
+.nav-bar li a:hover, .dropdown:hover{
     color: black;
     transition: all 250ms ease;
 }
