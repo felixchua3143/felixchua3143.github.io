@@ -19,7 +19,7 @@ ul {
 li{
     margin-left: 5%;
 }
-li a{
+li a, #photo-menu{
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
