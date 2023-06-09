@@ -11,21 +11,33 @@ body{
     width: 173px;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
 }
-ul {
+.nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li{
+.nav-bar ul ul{
+    display: none;
+}
+.navbar ul ul li {
+    display: block;
+    }
+
+.navbar li:hover ul {
+display: block;
+}
+.nav-bar li{
+    display: inline-block;
     margin-left: 5%;
 }
-li a, #photo-menu{
+.nav-bar li a{
+    display: block;
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: whitesmoke;
 }
-li a:hover{
+.nav-bar li a:hover{
     color: black;
     transition: all 250ms ease;
 }
