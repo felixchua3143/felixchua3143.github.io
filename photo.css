@@ -32,7 +32,7 @@ body{
     font-size: x-large;
 }
 .nav-bar li a:hover, .dropdown:hover{
-    color: black;
+    color: gray;
     transition: all 250ms ease;
 }
 .big-wrapper{
