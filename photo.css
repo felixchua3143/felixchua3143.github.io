@@ -16,18 +16,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.nav-bar ul ul{
-    display: none;
-}
-.navbar ul ul li {
-    display: block;
-    }
-
-.navbar li:hover ul {
-display: block;
-}
 .nav-bar li{
-    display: inline-block;
     margin-left: 5%;
 }
 .nav-bar li a{
