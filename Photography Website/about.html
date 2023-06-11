@@ -15,17 +15,21 @@
             .words{
                 display: flex;
                 align-items: center;
+                justify-content: center;
             }
-            pre{
+            p{
                 font-family:"Consolas", monospace;
                 font-size: x-large;
                 color: black;
                 margin: 0;
             }
-            a{
+            .my-work{
                 color: inherit;
             }
-
+            .my-work:hover{
+                color: grey;
+                transition: ease 250ms;
+            }
         </style>
 
     </head>
@@ -61,10 +65,10 @@
         
         <div class="words">
 
-            <pre>
-                Hello, I am Felix Chua and this is my website.
-                If you are here, thanks for (presumably) looking at <a href="allphotos.html">my work</a> first!
-            </pre>
+            <p>
+                Hello, I am Felix Chua and this is my website. <br/>
+                If you are here, thanks for (presumably) looking at <a class="my-work" href="allphotos.html">my work</a> first!
+            </p>
 
         </div>
 
