@@ -16,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.nav-bar li, .dropdown-content{
+.nav-bar li,.dropdown, .dropdown-content{
     margin-left: 5%;
 }
 .nav-bar li a, .dropdown, .dropdown-content{
@@ -27,13 +27,11 @@ body{
 }
 .dropdown{
     list-style-type: none;
-    margin-left: 5%;
 }
 .dropdown-content{
-    font-size: x-large;
     animation: open .5s ease-in-out;
 }
-.nav-bar li a:hover, .dropdown:hover{
+.nav-bar li a:hover, .dropdown:hover, .dropdown-content:hover{
     color: gray;
     transition: all 250ms ease;
 }
