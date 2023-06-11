@@ -12,20 +12,16 @@ body{
     border-radius: 0 15px 15px 0;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
 }
-.nav-bar ul {
-    margin: 0;
-    padding: 0;
-}
-.nav-bar li,.dropdown, .dropdown-content{
+.nav-item, .nav-item-dropdown, .dropdown-content{
     margin-left: 5%;
 }
-.nav-bar li a, .dropdown, .dropdown-content{
+.nav-item, .nav-item-dropdown, .dropdown-content{
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: whitesmoke;
 }
-.dropdown{
+.nav-item-dropdown{
     list-style-type: none;
 }
 .dropdown-menu{
@@ -34,7 +30,7 @@ body{
 .dropdown-content{
     animation: open .5s ease-in-out;
 }
-.nav-bar li a:hover, .dropdown:hover, .dropdown-content:hover{
+.nav-bar li a:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
     color: gray;
     transition: all 250ms ease;
 }
