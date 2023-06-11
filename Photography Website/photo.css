@@ -8,14 +8,13 @@ body{
 }
 .nav-bar{
     background-color: black;
-    width: 173px;
     border-radius: 0 15px 15px 0;
+    max-width: 173px;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
 }
 .nav-item, .nav-item-dropdown, .dropdown-content{
+    max-width: 173px;
     margin-left: 5%;
-}
-.nav-item, .nav-item-dropdown, .dropdown-content{
     font-family:"Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
@@ -23,13 +22,14 @@ body{
 }
 .nav-item-dropdown{
     list-style-type: none;
+    cursor: pointer;
 }
 .dropdown-menu{
     display: grid;
 }
 .dropdown-content{
     padding-left: 10%;
-    animation: open .5s ease-in-out;
+    animation: open 550ms ease-in-out;
 }
 .nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
     color: gray;
@@ -53,10 +53,6 @@ img:hover{
     transition: all ease 400ms;
 }
 @keyframes open{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes close{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {opacity: 0; margin-left: 0%; padding-left: 0%}
+    100% {opacity: 1; margin-left: 5%; padding-left: 10%}
 }
