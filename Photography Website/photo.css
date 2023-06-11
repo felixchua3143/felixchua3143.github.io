@@ -27,8 +27,8 @@ body{
     display: grid;
 }
 .dropdown-content{
-    padding-left: 10%;
-    animation: open 550ms ease-in-out;
+    padding-left: 15%;
+    animation: open 500ms ease-in-out;
 }
 .nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
     color: gray;
@@ -53,5 +53,5 @@ img:hover{
 }
 @keyframes open{
     0% {opacity: 0; margin-left: 0%; padding-left: 0%}
-    100% {opacity: 1; margin-left: 5%; padding-left: 10%}
+    100% {opacity: 1; margin-left: 5%; padding-left: 15%}
 }
