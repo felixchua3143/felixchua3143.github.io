@@ -28,6 +28,9 @@ body{
 .dropdown{
     list-style-type: none;
 }
+.dropdown-menu{
+    display: grid;
+}
 .dropdown-content{
     animation: open .5s ease-in-out;
 }
