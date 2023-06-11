@@ -28,6 +28,7 @@ body{
     display: grid;
 }
 .dropdown-content{
+    padding-left: 10%;
     animation: open .5s ease-in-out;
 }
 .nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
