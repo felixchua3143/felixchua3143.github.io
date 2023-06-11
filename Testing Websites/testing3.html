@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+	<head>
+
+		<style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                display: grid;
+                grid-template-rows: 0.3fr 1fr 0.3fr;
+                background-image: radial-gradient(circle, #e2725b, #94b0da);
+                height: 100vh;
+                margin: 0;
+            }
+            .image-track{
+                display: flex;
+                overflow: hidden;
+            }
+            .image{
+                height: 60vh;
+                margin: 40px;
+                box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+            }
+            .small-image-track{
+                display: flex;
+                height: 20vh;
+                overflow-x: scroll;
+            }
+            .small-image{
+                height: 20vh;
+            }
+	    </style>
+	</head>
+
+	<body>
+
+        <a class="home" href="index.html"> Home </a>
+
+		<div class="image-track">
+
+			<img class="image" id="image1" src="Pics\IMG_5582.webp">
+			<img class="image" id="image2" src="Pics\IMG_5646.webp">
+			<img class="image" id="image3" src="Pics\IMG_8501.webp">
+			<img class="image" id="image4" src="Pics\IMG_5219 (2).webp">
+			<img class="image" id="image5" src="Pics\IMG_5736.webp">
+			<img class="image" id="image6" src="Pics\IMG_5842.webp">
+			<img class="image" id="image7" src="Pics\IMG_5577.webp">
+
+		</div>
+
+        <div class="small-image-track">
+
+            <a href="#image1"> <img class="small-image" id="small-image1" src="Pics\IMG_5582.webp"> </a>
+            <a href="#image2"> <img class="small-image" id="small-image2" src="Pics\IMG_5646.webp"> </a>
+            <a href="#image3"> <img class="small-image" id="small-image3" src="Pics\IMG_8501.webp"> </a>
+            <a href="#image4"> <img class="small-image" id="small-image4" src="Pics\IMG_5219 (2).webp"> </a>
+            <a href="#image5"> <img class="small-image" id="small-image5" src="Pics\IMG_5736.webp"> </a>
+            <a href="#image6"> <img class="small-image" id="small-image6" src="Pics\IMG_5842.webp"> </a>
+            <a href="#image7"> <img class="small-image" id="small-image7" src="Pics\IMG_5577.webp"> </a>
+
+        </div>
+
+	</body>
+
+</html>

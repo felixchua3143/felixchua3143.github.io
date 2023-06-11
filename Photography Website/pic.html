@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<meta charset="utf-8">
+
+<head> 
+
+    <title> fzcy </title> 
+    
+    <style>
+       
+        body{
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(to left, #e2725b, #94b0da);
+            animation: gradient 60s ease infinite;
+            background-size: 400%;
+		}
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            overflow: hidden;
+            height: 100vh; 
+        }
+        .gallery {
+            overflow: scroll;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .gallery__img {
+            scroll-snap-align: start;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .lil-nav {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .lil-nav__img {
+            object-fit: cover;
+            filter: saturate(0);
+            transition: 0.3s ease all;
+        }
+        .lil-nav__img:hover {
+            transform: scale(1.05);
+            filter: saturate(1);
+        }
+        .home{
+            position: fixed;
+            font-family:"Consolas", monospace;
+            font-size: 30px;
+            right: 50px;
+            color:#495159;
+            text-decoration: none;
+        }
+        .home:hover{
+            color: black;
+            transform: scale(1.1);
+            transition: all ease 250ms;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="home" href="index.html"> Home </a>
+
+    <div class="wrapper">
+
+        <nav class="lil-nav">
+
+            <a href="#image-1"> <img class="lil-nav__img" src="Pics\IMG_5582.webp"/> </a>
+            <a href="#image-2"> <img class="lil-nav__img" src="Pics\IMG_5646.webp"/> </a>
+            <a href="#image-3"> <img class="lil-nav__img" src="Pics\IMG_8501.webp"/> </a>
+            <a href="#image-4"> <img class="lil-nav__img" src="Pics\IMG_5219 (2).webp"/> </a>
+            <a href="#image-5"> <img class="lil-nav__img" src="Pics\IMG_5577.webp"/> </a>
+            <a href="#image-6"> <img class="lil-nav__img" src="Pics\IMG_5736.webp"/> </a>
+            <a href="#image-7"> <img class="lil-nav__img" src="Pics\IMG_5842.webp"/> </a>
+            <a href="#image-8"> <img class="lil-nav__img" src="Pics\IMG_5376.webp" /> </a>
+
+          </nav>
+
+          <div class="gallery">
+
+            <img class="gallery__img" id="image-1" src="Photography Pics\IMG_5582.webp" />
+            <img class="gallery__img" id="image-2" src="Photography Pics\IMG_5646.webp" />
+            <img class="gallery__img" id="image-3" src="Photography Pics\IMG_8501.webp" />
+            <img class="gallery__img" id="image-4" src="Photography Pics\IMG_5219 (2).webp" />
+            <img class="gallery__img" id="image-5" src="Photography Pics\IMG_5577.webp" />
+            <img class="gallery__img" id="image-6" src="Photography Pics\IMG_5736.webp" />
+            <img class="gallery__img" id="image-7" src="Photography Pics\IMG_5842.webp" />
+            <img class="gallery__img" id="image-8" src="Photography Pics\IMG_5376.webp">
+            
+          </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
