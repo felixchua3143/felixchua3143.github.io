@@ -8,12 +8,11 @@ body{
 }
 .nav-bar{
     background-color: black;
+    width: 173px;
     border-radius: 0 15px 15px 0;
-    max-width: 173px;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
 }
 .nav-item, .nav-item-dropdown, .dropdown-content{
-    max-width: 173px;
     margin-left: 5%;
     font-family:"Consolas", monospace;
     font-size: xx-large;
