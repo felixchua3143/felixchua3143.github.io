@@ -32,7 +32,7 @@ body{
     margin-left: 20%;
     animation: open 500ms ease-in-out;
 }
-.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
+.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .my-work:hover{
     color: gray;
     transition: all 250ms ease;
 }
