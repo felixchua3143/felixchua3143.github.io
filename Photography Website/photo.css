@@ -53,6 +53,16 @@ img:hover{
     transform: scale(1.05);
     transition: all ease 400ms;
 }
+.copyright{
+    display: flex;
+    height: 83vh;
+    align-items: flex-end;
+}
+.copyright-text{
+    font-size: small;
+    margin: 0;
+    margin-left: 5%;
+}
 @keyframes open{
     0% {opacity: 0; margin-left: 15%;}
     100% {opacity: 1; margin-left: 20%;}
