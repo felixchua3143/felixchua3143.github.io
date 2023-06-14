@@ -1,52 +1,83 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 
 <html lang="en">
-  <head>
-    <style>
-      body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-        background-color: black ;
-      }
-      .title {
-        color: whitesmoke;
-        font-size: 100px;
-        font-family:"Consolas", monospace;
-        animation: pulse 2s infinite;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-        transition: all 250ms;
-      }
-      a:hover{
-        color: grey;
-      }
 
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-    </style>
+    <head>
 
-    <title> Hello. </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="photography">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
-  <body>
-      <h1 class="title">
-        <a href="pic.html"> Hello. </a>
-      </h1>
-  </body>
+        <link rel="stylesheet" href="photo.css">
+
+        <title> All Photos </title>
+
+    </head>
+
+    <body>
+
+        <nav class="nav-bar">
+
+            <a class="nav-item" href="index.html"> Home </a>
+
+                <details>
+
+                    <summary class="nav-item-dropdown"> Photos </summary>
+
+                    <nav class="dropdown-menu">
+
+                        <a class="dropdown-content" href="all-photos.html"> All </a>
+                        <a class="dropdown-content" href="dslr-photos.html"> DSLR </a>
+                        <a class="dropdown-content" href="phone-photos.html"> Phone </a>
+
+                    </nav>
+
+                </details>
+
+                <details>
+
+                    <summary class="nav-item-dropdown"> Contact </summary>
+
+                    <nav class="dropdown-menu">
+
+                        <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/"> Insta </a>
+
+                    </nav>
+
+                </details>
+
+            <a class="nav-item" href="about.html"> About </a>
+
+            <div class="copyright">
+
+                <p class="copyright-text"> All photos shown being to Felix Chua, do not steal or copy the photos for commerical gain. </p>
+
+            </div>
+
+        </nav>
+
+        <div class="big-wrapper">
+
+            <img class="image" src="Photography Pics/IMG_5582.webp">
+            <img class="image" src="Photography Pics/IMG_5646.webp">
+            <img class="image" src="Photography Pics/IMG_8501.webp">
+            <img class="image" src="Photography Pics/IMG_5219 (2).webp">
+            <img class="image" src="Photography Pics/IMG_5577.webp">
+            <img class="image" src="Photography Pics/IMG_5736.webp">
+            <img class="image" src="Photography Pics/IMG_5842.webp">
+            <img class="image" src="Photography Pics/IMG_5376.webp">
+            <img class="image" src="Photography Pics/20230527_155845.webp">
+            <img class="image" src="Photography Pics/20230527_161606.webp">
+            <img class="image" src="Photography Pics/20230527_163759.webp">
+            <img class="image" src="Photography Pics/20230527_171112.webp">
+            <img class="image" src="Photography Pics/20230527_172442.webp">
+            <img class="image" src="Photography Pics/20230527_172544.webp">
+            <img class="image" src="Photography Pics/20230527_173809.webp">
+            <img class="image" src="Photography Pics/20230324_165218.webp">
+            
+        </div>
+
+    </body>
+
 </html>
