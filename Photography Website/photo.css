@@ -32,6 +32,7 @@ body{
 }
 .dropdown-content{
     margin-left: 20%;
+    -webkit-animation: open 500ms ease-in-out;
     animation: open 500ms ease-in-out;
 }
 .nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .links:hover{
