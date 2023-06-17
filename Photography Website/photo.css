@@ -56,8 +56,8 @@ img:hover{
     transform: scale(1.05);
     transition: all ease 400ms;
 }
-.copyright{
-    align-self: end;
+footer{
+    grid-row: 6;
 }
 .copyright-text{
     font-size: small;
