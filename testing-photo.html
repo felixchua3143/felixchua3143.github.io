@@ -17,8 +17,20 @@
 
             .image-logo{
                 height: 18vh;
-                border-radius: 0 15px 15px 0;;
+                border-radius: 0 15px 15px 0;
             }
+
+            .nav-bar{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            .nav-list, .nav-list-item{
+                margin: 0;
+                padding: 0;
+            }
+
+
 
         </style>
 
@@ -28,9 +40,81 @@
 
         <nav class="nav-bar">
 
-        <a class="image-link" href="about.html"> <img class="image-logo" src="My Logo(V2-Dark).png">  </a>
+            <a class="image-link" href="about.html"> <img class="image-logo" src="My Logo(V2-Dark).png">  </a>
 
-        <a class="nav-item" href="index.html"> Home </a>
+            <ul class="nav-list"> 
+
+                <li class="nav-list-item">  
+
+                    <a class="nav-item" href="index.html"> Home </a>    
+
+                </li>
+
+                <li class="nav-list-item"> 
+                    
+                    <details>
+
+                        <summary class="nav-item-dropdown"> Photos </summary>
+        
+                        <div class="dropdown-menu">
+        
+                            <a class="dropdown-content" href="index.html"> All </a>
+                            <a class="dropdown-content" href="dslr-photos.html"> DSLR </a>
+                            <a class="dropdown-content" href="phone-photos.html"> Phone </a>
+        
+                        </div>
+        
+                    </details>
+                
+                </li>
+
+                <li class="nav-list-item"> 
+                    
+                    <details>
+
+                        <summary class="nav-item-dropdown"> Contact </summary>
+        
+                        <div class="dropdown-menu">
+        
+                            <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/"> Insta </a>
+        
+                        </div>
+        
+                    </details>
+                
+                </li>
+
+                <li class="nav-list-item">  
+                    
+                    <a class="nav-item" href="about.html"> About </a>
+                
+                </li>
+
+            </ul>
+
+            <footer>
+
+                <div class="copyright">
+
+                    <p class="copyright-text"> All photos shown being to Felix Chua, do not steal or copy the photos for commerical gain. </p>
+
+                </div>
+
+            </footer>
+
+        </nav>
+
+    </body>
+
+</html>
+
+<!-- 
+
+    <nav class="nav-bar">
+
+            <a class="image-link" href="about.html"> <img class="image-logo" src="My Logo(V2-Dark).png">  </a>
+
+            <a class="nav-item" href="index.html"> Home </a>
 
             <details>
 
@@ -60,18 +144,4 @@
 
             <a class="nav-item" href="about.html"> About </a>
 
-            <footer>
-
-                <div class="copyright">
-
-                    <p class="copyright-text"> All photos shown being to Felix Chua, do not steal or copy the photos for commerical gain. </p>
-
-                </div>
-
-            </footer>
-
-        </nav>
-
-    </body>
-
-</html>
+-->
