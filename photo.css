@@ -1,4 +1,4 @@
-body{
+body {
     height: 100vh;
     margin: 0;
     display: grid;
@@ -6,40 +6,56 @@ body{
     background-color: whitesmoke;
     overflow-y: hidden;
 }
-.nav-bar{
+
+.nav-bar {
     display: grid;
     grid-template-rows: 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr 1fr;
     background-color: black;
     min-width: 173px;
     border-radius: 0 15px 15px 0;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    /* Thank you Dennise, for the box shadow code! */
 }
-.nav-item, .nav-item-dropdown, .dropdown-content, .copyright-text{
-    font-family:"Consolas", monospace;
+
+.nav-item,
+.nav-item-dropdown,
+.dropdown-content,
+.copyright-text {
+    font-family: "Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: whitesmoke;
 }
-.nav-item, .nav-item-dropdown{
+
+.nav-item,
+.nav-item-dropdown {
     margin-left: 5%;
 }
-.nav-item-dropdown{
+
+.nav-item-dropdown {
     list-style-type: none;
     cursor: pointer;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: grid;
 }
-.dropdown-content{
+
+.dropdown-content {
     margin-left: 20%;
     -webkit-animation: open 500ms ease-in-out;
     animation: open 500ms ease-in-out;
 }
-.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .links:hover{
+
+.nav-item:hover,
+.nav-item-dropdown:hover,
+.dropdown-content:hover,
+.links:hover {
     color: gray;
     transition: all 250ms ease;
 }
-.big-wrapper{
+
+.big-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,24 +64,37 @@ body{
     gap: 0.5%;
     overflow-y: scroll;
 }
-.image{
+
+.image {
     height: 50vh;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2); /* Thank you Dennise, for the box shadow code! */
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    /* Thank you Dennise, for the box shadow code! */
 }
-.image:hover{
+
+.image:hover {
     transform: scale(1.05);
     transition: all ease 400ms;
 }
-footer{
+
+footer {
     grid-row: 7;
 }
-.copyright-text{
+
+.copyright-text {
     font-size: small;
     margin: 0;
     margin-left: 5%;
     margin-bottom: 5%;
 }
-@keyframes open{
-    0% {opacity: 0; margin-left: 15%;}
-    100% {opacity: 1; margin-left: 20%;}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        margin-left: 15%;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 20%;
+    }
 }
