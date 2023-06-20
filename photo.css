@@ -9,12 +9,22 @@ body {
 
 .nav-bar {
     display: grid;
-    grid-template-rows: 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: black;
     min-width: 173px;
     border-radius: 0 15px 15px 0;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
     /* Thank you Dennise, for the box shadow code! */
+}
+
+.image-logo{
+    height: 18vh;
+    border-radius: 0 15px 15px 0;
+}
+
+.nav-list, .nav-list-item{
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item, .nav-item-dropdown, .dropdown-content, .copyright-text {
