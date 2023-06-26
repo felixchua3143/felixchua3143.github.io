@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
-    margin: 0;
     display: grid;
     grid-template-columns: 0.1fr 1fr;
     background-color: whitesmoke;
@@ -9,7 +13,7 @@ body {
 
 .nav-bar {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: black;
     min-width: 173px;
     border-radius: 0 15px 15px 0;
@@ -23,8 +27,7 @@ body {
 }
 
 .nav-list, .nav-list-item {
-    margin: 0;
-    padding: 0;
+    display: grid;
 }
 
 .nav-item, .nav-item-dropdown, .dropdown-content, .copyright-text {
