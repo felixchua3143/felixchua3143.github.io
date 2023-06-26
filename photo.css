@@ -17,12 +17,12 @@ body {
     /* Thank you Dennise, for the box shadow code! */
 }
 
-.image-logo{
+.image-logo {
     height: 18vh;
     border-radius: 0 15px 15px 0;
 }
 
-.nav-list, .nav-list-item{
+.nav-list, .nav-list-item {
     margin: 0;
     padding: 0;
 }
