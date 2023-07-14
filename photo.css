@@ -1,127 +1,128 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+ * {
+     margin: 0;
+     padding: 0;
+ }
 
-body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    background-color: whitesmoke;
-    overflow-y: hidden;
-}
+ body {
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 0.1fr 1fr;
+     background-color: black;
+     overflow-y: hidden;
+ }
 
-.nav-bar {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: black;
-    border-radius: 0 15px 15px 0;
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
-}
+ .nav-bar {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     background-color: whitesmoke;
+     border-radius: 0 15px 15px 0;
+     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+     /* Thank you Dennise, for the box shadow code! */
+ }
 
-.image-link {
-    height: fit-content;
-}
+ .image-link {
+     height: fit-content;
+ }
 
-.image-logo {
-    width: 100%;
-    border-radius: 0px 15px 15px 0px;
-}
+ .image-logo {
+     width: 100%;
+     border-radius: 0px 15px 15px 0px;
+     filter: invert(1);
+ }
 
-.nav-list {
-    align-items: center;
-}
+ .nav-list {
+     align-items: center;
+ }
 
-.nav-list,
-.nav-list-item {
-    display: grid;
-    margin: 0;
-    padding: 0;
-}
+ .nav-list,
+ .nav-list-item {
+     display: grid;
+     margin: 0;
+     padding: 0;
+ }
 
-.nav-item,
-.nav-item-dropdown,
-.dropdown-content,
-.copyright-text {
-    font-family: "Consolas", monospace;
-    font-size: xx-large;
-    text-decoration: none;
-    color: whitesmoke;
-}
+ .nav-item,
+ .nav-item-dropdown,
+ .dropdown-content,
+ .copyright-text {
+     font-family: "Consolas", monospace;
+     font-size: xx-large;
+     text-decoration: none;
+     color: gray;
+ }
 
-.nav-item,
-.nav-item-dropdown {
-    margin-left: 5%;
-}
+ .nav-item,
+ .nav-item-dropdown {
+     margin-left: 5%;
+ }
 
-.nav-item {
-    height: fit-content;
-    width: fit-content
-}
+ .nav-item {
+     height: fit-content;
+     width: fit-content
+ }
 
-.nav-item-dropdown {
-    list-style-type: none;
-    cursor: pointer;
-}
+ .nav-item-dropdown {
+     list-style-type: none;
+     cursor: pointer;
+ }
 
-.dropdown-menu {
-    display: grid;
-}
+ .dropdown-menu {
+     display: grid;
+ }
 
-.dropdown-content {
-    margin-left: 20%;
-    animation: open 500ms ease-in-out;
-}
+ .dropdown-content {
+     margin-left: 20%;
+     animation: open 500ms ease-in-out;
+ }
 
-.nav-item:hover,
-.nav-item-dropdown:hover,
-.dropdown-content:hover,
-.links:hover {
-    color: gray;
-    transition: all 250ms ease;
-}
+ .nav-item:hover,
+ .nav-item-dropdown:hover,
+ .dropdown-content:hover,
+ .links:hover {
+     color: black;
+     transition: all 250ms ease;
+ }
 
-.big-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    gap: 0.5%;
-    overflow-y: scroll;
-}
+ .big-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     gap: 0.5%;
+     overflow-y: scroll;
+ }
 
-.image {
-    height: 50vh;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-    /* Thank you Dennise, for the box shadow code! */
-}
+ .image {
+     height: 50vh;
+     box-shadow: 0px 0px 15px 8px white;
+ }
 
-.image:hover {
-    transform: scale(1.05);
-    transition: all ease 400ms;
-}
+ .image:hover {
+     transform: scale(1.05);
+     transition: all ease 400ms;
+ }
 
-footer {
-    grid-row: 3;
-    align-self: flex-end;
-}
+ footer {
+     grid-row: 3;
+     align-self: flex-end;
+ }
 
-.copyright-text {
-    font-size: small;
-    margin: 0;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
+ .copyright-text {
+     font-size: small;
+     margin: 0;
+     margin-left: 5%;
+     margin-bottom: 5%;
+ }
 
-@keyframes open {
-    0% {
-        opacity: 0;
-        margin-left: 15%;
-    }
+ @keyframes open {
+     0% {
+         opacity: 0;
+         margin-left: 15%;
+     }
 
-    100% {
-        opacity: 1;
-        margin-left: 20%;
-    }
-}
+     100% {
+         opacity: 1;
+         margin-left: 20%;
+     }
+ }

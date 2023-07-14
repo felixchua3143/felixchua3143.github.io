@@ -99,6 +99,26 @@
             transition: all 250ms ease;
         }
 
+        .big-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            gap: 0.5%;
+            overflow-y: scroll;
+        }
+
+        .image {
+            height: 50vh;
+            box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            transition: all ease 400ms;
+        }
+
         footer {
             grid-row: 3;
             align-self: flex-end;
