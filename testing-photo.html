@@ -23,14 +23,14 @@
             height: 100vh;
             display: grid;
             grid-template-columns: 0.1fr 1fr;
-            background-color: whitesmoke;
+            background-color: black;
             overflow-y: hidden;
         }
 
         .nav-bar {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            background-color: black;
+            background-color: whitesmoke;
             border-radius: 0 15px 15px 0;
             box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
             /* Thank you Dennise, for the box shadow code! */
@@ -43,6 +43,7 @@
         .image-logo {
             width: 100%;
             border-radius: 0px 15px 15px 0px;
+            filter: invert(1);
         }
 
         .nav-list {
@@ -63,7 +64,7 @@
             font-family: "Consolas", monospace;
             font-size: xx-large;
             text-decoration: none;
-            color: whitesmoke;
+            color: gray;
         }
 
         .nav-item,
@@ -94,28 +95,8 @@
         .nav-item-dropdown:hover,
         .dropdown-content:hover,
         .links:hover {
-            color: gray;
+            color: black;
             transition: all 250ms ease;
-        }
-
-        .big-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            gap: 0.5%;
-            overflow-y: scroll;
-        }
-
-        .image {
-            height: 50vh;
-            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .image:hover {
-            transform: scale(1.05);
-            transition: all ease 400ms;
         }
 
         footer {
