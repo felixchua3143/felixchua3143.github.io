@@ -21,13 +21,21 @@ body {
 }
 
 .image-link {
-    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 .image-logo {
-    width: 90%;
+    width: 100%;
+    height: fit-content;
+    transform: scale(0.9);
     border-radius: 0px 15px 15px 0px;
     filter: invert(1);
+}
+
+.image-logo:hover {
+    transform: scale(1);
+    transition: all 250ms ease;
 }
 
 .nav-list {
