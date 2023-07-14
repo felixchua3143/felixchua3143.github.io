@@ -31,7 +31,6 @@
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             background-color: black;
-            min-width: 173px;
             border-radius: 0 15px 15px 0;
             box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
             /* Thank you Dennise, for the box shadow code! */
@@ -43,9 +42,10 @@
 
         .image-logo {
             width: 100%;
+            border-radius: 0px 15px 15px 0px;
         }
 
-        .nav-list{
+        .nav-list {
             align-items: center;
         }
 
@@ -111,7 +111,6 @@
         .image {
             height: 50vh;
             box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-            /* Thank you Dennise, for the box shadow code! */
         }
 
         .image:hover {
@@ -142,7 +141,6 @@
                 margin-left: 20%;
             }
         }
-
     </style>
 
 </head>
@@ -155,54 +153,55 @@
 
         <ul class="nav-list">
 
-                <li class="nav-list-item">
+            <li class="nav-list-item">
 
-                    <a class="nav-item" href="index.html"> Home </a>
+                <a class="nav-item" href="index.html"> Home </a>
 
-                </li>
+            </li>
 
-                <li class="nav-list-item">
+            <li class="nav-list-item">
 
-                    <details>
+                <details>
 
-                        <summary class="nav-item-dropdown"> Photos </summary>
+                    <summary class="nav-item-dropdown"> Photos </summary>
 
-                        <div class="dropdown-menu">
+                    <div class="dropdown-menu">
 
-                            <a class="dropdown-content" href="all-photos.html"> All </a>
-                            <a class="dropdown-content" href="event-photos.html"> Events </a>
-                            <a class="dropdown-content" href="people-photos.html"> People </a>
-                            <a class="dropdown-content" href="animal-photos.html"> Animals </a>
+                        <a class="dropdown-content" href="all-photos.html"> All </a>
+                        <a class="dropdown-content" href="event-photos.html"> Events </a>
+                        <a class="dropdown-content" href="people-photos.html"> People </a>
+                        <a class="dropdown-content" href="animal-photos.html"> Animals </a>
 
-                        </div>
+                    </div>
 
-                    </details>
+                </details>
 
-                </li>
+            </li>
 
-                <li class="nav-list-item">
+            <li class="nav-list-item">
 
-                    <details>
+                <details>
 
-                        <summary class="nav-item-dropdown"> Contact </summary>
+                    <summary class="nav-item-dropdown"> Contact </summary>
 
-                        <div class="dropdown-menu">
+                    <div class="dropdown-menu">
 
-                            <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/"> Insta </a>
+                        <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/">
+                            Insta </a>
 
-                        </div>
+                    </div>
 
-                    </details>
+                </details>
 
-                </li>
+            </li>
 
-                <li class="nav-list-item">
+            <li class="nav-list-item">
 
-                    <a class="nav-item" href="about.html"> About </a>
+                <a class="nav-item" href="about.html"> About </a>
 
-                </li>
+            </li>
 
-            </ul>
+        </ul>
 
         <footer>
 
