@@ -2,107 +2,220 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="photography">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="photography">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="photo.css">
 
-        <title> Testing </title>
+    <title> Testing </title>
 
-        <style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-            .image-logo{
-                height: 18vh;
-                border-radius: 0 15px 15px 0;
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.1fr 1fr;
+            background-color: whitesmoke;
+            overflow-y: hidden;
+        }
+
+        .nav-bar {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: black;
+            min-width: 173px;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+            /* Thank you Dennise, for the box shadow code! */
+        }
+
+        .image-link {
+            height: fit-content;
+        }
+
+        .image-logo {
+            width: 100%;
+        }
+
+        .nav-list,
+        .nav-list-item {
+            display: grid;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item,
+        .nav-item-dropdown,
+        .dropdown-content,
+        .copyright-text {
+            font-family: "Consolas", monospace;
+            font-size: xx-large;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .nav-item,
+        .nav-item-dropdown {
+            margin-left: 5%;
+        }
+
+        .nav-item {
+            height: fit-content;
+            width: fit-content
+        }
+
+        .nav-item-dropdown {
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-content {
+            margin-left: 20%;
+            animation: open 500ms ease-in-out;
+        }
+
+        .nav-item:hover,
+        .nav-item-dropdown:hover,
+        .dropdown-content:hover,
+        .links:hover {
+            color: gray;
+            transition: all 250ms ease;
+        }
+
+        .big-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            gap: 0.5%;
+            overflow-y: scroll;
+        }
+
+        .image {
+            height: 50vh;
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+            /* Thank you Dennise, for the box shadow code! */
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            transition: all ease 400ms;
+        }
+
+        footer {
+            grid-row: 7;
+        }
+
+        .copyright-text {
+            font-size: small;
+            margin: 0;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+
+        @keyframes open {
+            0% {
+                opacity: 0;
+                margin-left: 15%;
             }
 
-            .nav-bar{
-                display: grid;
+            100% {
+                opacity: 1;
+                margin-left: 20%;
             }
+        }
 
-            .nav-list, .nav-list-item{
-                margin: 0;
-                padding: 0; 
-            }
+    </style>
 
+</head>
 
+<body>
 
-        </style>
+    <nav class="nav-bar">
 
-    </head>
+        <a class="image-link" href="about.html"> <img class="image-logo" src="images/My Logo(V2-Dark).png"> </a>
 
-    <body>
+        <ul class="nav-list">
 
-        <nav class="nav-bar">
+            <li class="nav-list-item">
 
-            <a class="image-link" href="about.html"> <img class="image-logo" src="images/My Logo(V2-Dark).png">  </a>
+                <a class="nav-item" href="index.html"> Home </a>
 
-            <ul class="nav-list"> 
+            </li>
 
-                <li class="nav-list-item">  
+            <li class="nav-list-item">
 
-                    <a class="nav-item" href="index.html"> Home </a>    
+                <details>
 
-                </li>
+                    <summary class="nav-item-dropdown"> Photos </summary>
 
-                <li class="nav-list-item"> 
-                    
-                    <details>
+                    <div class="dropdown-menu">
 
-                        <summary class="nav-item-dropdown"> Photos </summary>
-        
-                        <div class="dropdown-menu">
-        
-                            <a class="dropdown-content" href="index.html"> All </a>
-                            <a class="dropdown-content" href="dslr-photos.html"> DSLR </a>
-                            <a class="dropdown-content" href="phone-photos.html"> Phone </a>
-        
-                        </div>
-        
-                    </details>
-                
-                </li>
+                        <a class="dropdown-content" href="index.html"> All
+                        </a>
+                        <a class="dropdown-content" href="dslr-photos.html">
+                            DSLR </a>
+                        <a class="dropdown-content" href="phone-photos.html">
+                            Phone </a>
 
-                <li class="nav-list-item"> 
-                    
-                    <details>
+                    </div>
 
-                        <summary class="nav-item-dropdown"> Contact </summary>
-        
-                        <div class="dropdown-menu">
-        
-                            <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/"> Insta </a>
-        
-                        </div>
-        
-                    </details>
-                
-                </li>
+                </details>
 
-                <li class="nav-list-item">  
-                    
-                    <a class="nav-item" href="about.html"> About </a>
-                
-                </li>
+            </li>
 
-            </ul>
+            <li class="nav-list-item">
 
-            <footer>
+                <details>
 
-                <div class="copyright">
+                    <summary class="nav-item-dropdown"> Contact </summary>
 
-                    <p class="copyright-text"> All photos shown being to Felix Chua, do not steal or copy the photos for commerical gain. </p>
+                    <div class="dropdown-menu">
 
-                </div>
+                        <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/">
+                            Insta </a>
 
-            </footer>
+                    </div>
 
-        </nav>
+                </details>
 
-    </body>
+            </li>
+
+            <li class="nav-list-item">
+
+                <a class="nav-item" href="about.html"> About </a>
+
+            </li>
+
+        </ul>
+
+        <footer>
+
+            <div class="copyright">
+
+                <p class="copyright-text"> All photos shown being to Felix
+                    Chua, do not steal or copy the photos for
+                    commerical gain. </p>
+
+            </div>
+
+        </footer>
+
+    </nav>
+
+</body>
 
 </html>
