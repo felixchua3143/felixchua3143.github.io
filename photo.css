@@ -91,10 +91,11 @@ body {
 .image-wrapper {
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
     justify-content: center;
-    gap: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
+    gap: 2%;
 }
 
 .image {
