@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -21,24 +21,44 @@ body {
     /* Thank you Dennise, for the box shadow code! */
 }
 
+.image-link {
+    height: fit-content;
+}
+
 .image-logo {
-    height: 18vh;
-    border-radius: 0 15px 15px 0;
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
 }
 
-.nav-list, .nav-list-item {
+.nav-list {
+    align-items: center;
+}
+
+.nav-list,
+.nav-list-item {
     display: grid;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-item, .nav-item-dropdown, .dropdown-content, .copyright-text {
+.nav-item,
+.nav-item-dropdown,
+.dropdown-content,
+.copyright-text {
     font-family: "Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: whitesmoke;
 }
 
-.nav-item, .nav-item-dropdown {
+.nav-item,
+.nav-item-dropdown {
     margin-left: 5%;
+}
+
+.nav-item {
+    height: fit-content;
+    width: fit-content
 }
 
 .nav-item-dropdown {
@@ -55,7 +75,10 @@ body {
     animation: open 500ms ease-in-out;
 }
 
-.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .links:hover {
+.nav-item:hover,
+.nav-item-dropdown:hover,
+.dropdown-content:hover,
+.links:hover {
     color: gray;
     transition: all 250ms ease;
 }
@@ -82,7 +105,8 @@ body {
 }
 
 footer {
-    grid-row: 7;
+    grid-row: 3;
+    align-self: flex-end;
 }
 
 .copyright-text {
