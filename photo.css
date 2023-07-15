@@ -7,22 +7,23 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 0.1fr 1fr;
-    background-color: black;
+    background-color: whitesmoke;
     overflow-y: hidden;
 }
 
 .nav-bar {
     display: grid;
+    min-height: fit-content;
+    min-width: fit-content;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: whitesmoke;
     border-radius: 0 15px 15px 0;
-    box-shadow: 8px 8px 8px 8px gray;
-    /* Thank you Dennise, for the box shadow code! */
 }
 
 .image-link {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .image-logo {
