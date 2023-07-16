@@ -74,6 +74,7 @@ body {
 .nav-item-dropdown {
     list-style-type: none;
     cursor: pointer;
+    width: fit-content;
 }
 
 .dropdown-menu {
@@ -83,16 +84,15 @@ body {
 .dropdown-content {
     margin-left: 20%;
     animation: open 500ms ease-in-out;
+    width: fit-content;
 }
 
-.nav-item:hover,
-.nav-item-dropdown:hover,
-.dropdown-content:hover,
-.links:hover,
-{
-color: white;
-transition: all 250ms ease;
+.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover{
+    color: white;
+    transition: all 250ms ease;
 }
+
+
 
 .big-wrapper {
     display: flex;
