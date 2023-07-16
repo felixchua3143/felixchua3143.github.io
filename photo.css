@@ -44,20 +44,25 @@ body {
     align-items: center;
 }
 
-.nav-list, .nav-list-item {
+.nav-list,
+.nav-list-item {
     display: grid;
     margin: 0;
     padding: 0;
 }
 
-.nav-item, .nav-item-dropdown, .dropdown-content, .copyright-text {
+.nav-item,
+.nav-item-dropdown,
+.dropdown-content,
+.copyright-text {
     font-family: "Consolas", monospace;
     font-size: xx-large;
     text-decoration: none;
     color: gray;
 }
 
-.nav-item, .nav-item-dropdown {
+.nav-item,
+.nav-item-dropdown {
     margin-left: 5%;
 }
 
@@ -80,15 +85,20 @@ body {
     animation: open 500ms ease-in-out;
 }
 
-.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .links:hover {
-    color: white;
-    transition: all 250ms ease;
+.nav-item:hover,
+.nav-item-dropdown:hover,
+.dropdown-content:hover,
+.links:hover,
+{
+color: white;
+transition: all 250ms ease;
 }
 
 .big-wrapper {
     display: flex;
     overflow-y: auto;
 }
+
 .image-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +107,7 @@ body {
     margin-bottom: 2%;
     gap: 2%;
 }
+
 .image {
     height: 50vh;
     box-shadow: 0px 0px 10px 0px gray;
