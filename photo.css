@@ -13,8 +13,7 @@ body {
 
 .nav-bar {
     display: grid;
-    min-width: fit-content;
-    min-height: fit-content;
+    width: fit-content;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #28282B;
     border-radius: 0 15px 15px 0;
