@@ -12,12 +12,13 @@
     <meta name="description" content="photography">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css files/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
 
     <style>
         * {
             margin: 0;
             padding: 0;
-            font-family: Georgia, serif;
+            font-family: 'Roboto Slab', sans-serif;
             font-size: xx-large;
         }
 
@@ -26,15 +27,36 @@
             background-color: black;
         }
 
-        .wrapper {
-            display: grid;
-            place-items: center;
+        .image-wrapper {
+            background-image: url(./images/130.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .wrapper{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 100000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5%;
         }
 
         .nav-item {
             color: white;
             text-decoration: none;
             height: fit-content;
+            z-index: 10000;
+        }
+
+        .nav-item:hover {
+            color: gray;
+            text-decoration: underline;
+            transition: all 250ms ease;
         }
     </style>
 
@@ -42,12 +64,13 @@
 
 <body>
 
+    <section class="image-wrapper">  </section>
+
     <section class="wrapper">
 
-        <a class="nav-item" href="./all-photos.html"> fasd </a>
-        <a class="nav-item" href="./all-photos.html"> fasd </a>
-        <a class="nav-item" href="./all-photos.html"> fasd </a>
-        <a class="nav-item" href="./all-photos.html"> fasd </a>
+        <a class="nav-item" href="./all-photos.html"> Photos </a>
+        <a class="nav-item" href="./all-photos.html"> My Instagram </a>
+        <a class="nav-item" href="./all-photos.html"> About Me </a>
 
     </section>
 
