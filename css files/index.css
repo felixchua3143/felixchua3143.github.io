@@ -17,7 +17,6 @@ body {
     background-position: center;
     height: 100%;
     filter: blur(4px);
-    animation: Shift 1s;
 }
 
 .wrapper {
@@ -74,12 +73,42 @@ body {
     }
 }
 
-@keyframes Shift {
+@keyframes Shift-RL {
     0% {
         transform: translateX(100%);
     }
 
     100% {
         transform: translateX(0%);
+    }
+}
+
+@keyframes Shift-LR {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes Shift-UD {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes Shift-DU {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }

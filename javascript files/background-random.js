@@ -13,10 +13,25 @@ function changeBg() {
 
     const imageWrapper = document.getElementById("image-wrapper");
 
-    bg = images[Math.floor(Math.random() * images.length)];
+    newBg = images[Math.floor(Math.random() * images.length)];
 
-    imageWrapper.style.backgroundImage = bg;
+    imageWrapper.style.backgroundImage = newBg;
 
 }
 
 changeBg()
+
+function changeShiftDirection(){
+    const directions = [
+        'Shift-LR 1s',
+        'Shift-RL 1s',
+        'Shift-UD 1s',
+        'Shift-DU 1s'
+    ]
+
+    const imageWrapper = document.getElementById("image-wrapper");
+
+    newDirection = directions[Math.floor(Math.random() * directions.length)];
+
+    imageWrapper.style.animation = newDirection;
+}
