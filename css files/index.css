@@ -37,8 +37,36 @@ body {
     z-index: 10000;
 }
 
+#photos{
+    animation: Pulse 0.8s;
+}
+
+#insta{
+    animation: Pulse 0.8s;
+    animation-delay: 0.1s;
+}
+
+#about{
+    animation: Pulse 0.8s;
+    animation-delay: 0.2s;
+}
+
 .nav-item:hover {
     color: gray;
     text-decoration: underline;
     transition: all 250ms ease;
+}
+
+@keyframes Pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
