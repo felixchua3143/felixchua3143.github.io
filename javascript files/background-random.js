@@ -35,3 +35,5 @@ function changeShiftDirection(){
 
     imageWrapper.style.animation = newDirection;
 }
+
+changeShiftDirection()
