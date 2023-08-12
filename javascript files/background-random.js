@@ -13,7 +13,9 @@ function changeBg() {
 
     const imageWrapper = document.getElementById("image-wrapper");
 
-    imageWrapper.style.backgroundImage = images[Math.floor(Math.random() * images.length)];
+    bg = images[Math.floor(Math.random() * images.length)];
+
+    imageWrapper.style.backgroundImage = bg;
 
 }
 
