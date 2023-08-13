@@ -10,9 +10,8 @@ function navBar(){
         './images/My Logo(V2-Dark) (2).png'
     ]
 
-    const logo = document.getElementById('image-logo').src = logoLink
+    document.getElementById('image-logo').src = logoLink
 
-    console.log(navBarContents)
 }
 
 navBar()
