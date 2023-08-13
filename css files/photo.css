@@ -11,7 +11,7 @@ body {
     overflow-y: hidden;
 }
 
-.nav-bar {
+#nav-bar {
     display: grid;
     width: fit-content;
     background-color: #28282B;
@@ -37,11 +37,11 @@ body {
     transition: all 250ms;
 }
 
-.nav-list {
+#nav-list {
     align-items: center;
 }
 
-.nav-list,
+#nav-list,
 .nav-list-item {
     display: grid;
     margin: 0;
