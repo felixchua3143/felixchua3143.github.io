@@ -40,21 +40,20 @@ body {
 
 #photos {
     animation: Pulse 0.8s;
-    animation-delay: 1s;
 }
 
 #insta {
     animation: Pulse 0.8s;
-    animation-delay: 1.1s;
+    animation-delay: 0.1s;
 }
 
 #about {
     animation: Pulse 0.8s;
-    animation-delay: 1.3s;
+    animation-delay: 0.3s;
 }
 
 .nav-item:hover {
-    color: gray;
+    color: whitesmoke;
     transition: all 250ms ease;
     transform: scale(1.1);
 }
