@@ -19,8 +19,6 @@ function changeBg() {
 
 }
 
-changeBg()
-
 function changeShiftDirection(){
     const directions = [
         'Shift-LR 1s',
@@ -36,4 +34,6 @@ function changeShiftDirection(){
     imageWrapper.style.animation = newDirection;
 }
 
+
+changeBg()
 changeShiftDirection()
