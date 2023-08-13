@@ -6,11 +6,11 @@ function navBar(){
 
     navBarElements.innerHTML = navBarContents
 
-    const logoLink = [
-        './images/My Logo(V2-Dark) (2).png'
-    ]
+    // const logoLink = [
+    //     './images/My Logo(V2-Dark) (2).png'
+    // ]
 
-    document.getElementById('image-logo').src = logoLink
+    // document.getElementById('image-logo').src = logoLink
 
 }
 
