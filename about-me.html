@@ -17,27 +17,33 @@
         .wrapper {
             display: grid;
             width: 100%;
-            height: fit-content;
+            height: 100%;
             grid-template-columns: 0.5fr 1fr;
-            margin-top: 8%;
+            align-items: center;
         }
 
         .image {
             justify-self: end;
             margin: 0%;
+            min-width: auto;
         }
 
         .words {
-            font-family: inherit;
+            font-family: 'Roboto Slab', sans-serif;
             font-size: 175%;
             color: white;
-            margin-top: 0.1%;
             margin-left: 2%;
         }
 
-        .links {
-            color: inherit;
-            /* Inherit text colour from .words */
+        .link {
+            color: inherit;                     	    /* Inherit text colour from .words */
+            text-decoration: none;
+        }
+
+        .link:hover{
+            color: gray;
+            text-decoration: underline;
+            transition: all 250ms ease;
         }
     </style>
 
@@ -58,17 +64,17 @@
 
             <div class="words">
 
-                <p>
+                <p class="text">
 
                     Hello, I am Felix Chua and this is my website! <br />
 
-                    If you are here, thanks for (presumably) looking at <a class="links" href="allphotos.html">my
+                    If you are here, thanks for (presumably) looking at <a class="link" href="allphotos.html">my
                         work</a> first! <br /><br />
 
                     I am a beginner photographer based in Singapore, <br /> currently focusing on event photography but
                     am open to any kind of photography. <br /><br />
 
-                    If you want to contact me, check me out on <a class="links"
+                    If you want to contact me, check me out on <a class="link"
                         href="https://www.instagram.com/felixchua3141/"> Instagram! </a> <br /><br />
 
                 </p>
