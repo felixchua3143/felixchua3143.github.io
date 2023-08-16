@@ -18,17 +18,17 @@ body {
     border-radius: 0 15px 15px 0;
 }
 
-.image-link {
+.logo{
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.image-link{
     height: fit-content;
     width: fit-content;
 }
 
 #image-logo {
     width: 100%;
-    height: fit-content;
     transform: scale(0.9);
     border-radius: 15px 15px 15px 15px;
 }
@@ -40,15 +40,13 @@ body {
 
 #nav-list {
     display: grid;
-    height: fit-content;
-    margin-top: 50%;
-    gap: 5%;
 }
 
 .nav-list-item {
     display: grid;
     margin: 0;
     padding: 0;
+    height: fit-content;
 }
 
 .nav-item,
@@ -121,7 +119,6 @@ body {
 }
 
 footer {
-    grid-row: 3;
     align-self: flex-end;
 }
 
@@ -139,7 +136,6 @@ footer {
 
 .links:hover {
     color: white;
-    transition: all 250ms ease;
 }
 
 @keyframes open {
