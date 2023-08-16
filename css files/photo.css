@@ -12,8 +12,7 @@ body {
 }
 
 #nav-bar {
-    display: grid;
-    width: 110%;
+    display: inline-grid;
     background-color: #28282B;
     border-radius: 0 15px 15px 0;
 }
@@ -126,6 +125,7 @@ footer {
     font-size: small;
     margin: 0;
     margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5%;
 }
 
