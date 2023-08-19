@@ -52,7 +52,7 @@ body {
 .nav-item-dropdown,
 .dropdown-content,
 .copyright-text {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: xx-large;
     text-decoration: none;
     color: gray;
