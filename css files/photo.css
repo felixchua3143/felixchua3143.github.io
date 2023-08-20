@@ -17,11 +17,11 @@ body {
     border-radius: 0 15px 15px 0;
 }
 
-.logo{
+.logo {
     display: flex;
 }
 
-.image-link{
+.image-link {
     height: fit-content;
     width: fit-content;
 }
@@ -84,7 +84,10 @@ body {
     width: fit-content;
 }
 
-.nav-item:hover, .nav-item-dropdown:hover, .dropdown-content:hover, .links:hover {
+.nav-item:hover,
+.nav-item-dropdown:hover,
+.dropdown-content:hover,
+.links:hover {
     color: white;
     transition: all 250ms ease;
 }
