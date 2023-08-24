@@ -6,15 +6,30 @@
   font-size: xx-large;
   text-decoration: none;
   color: gray;
+  list-style-type: none;
 }
 
-.big-wrapper {
+body {
+  background-color: black;
+}
+body .big-wrapper {
   display: grid;
   grid-auto-flow: column;
   background-color: black;
 }
-.big-wrapper #nav-bar {
+body .big-wrapper #nav-bar {
   display: flex;
   flex-direction: column;
   background-color: #28282B;
+  height: 100vh;
+  width: 15vw;
+  gap: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+body .big-wrapper #nav-bar #logo #image-link #image-logo {
+  width: 100%;
+}
+body .big-wrapper #nav-bar .nav-list .nav-list-item details summary .dropdown-menu {
+  display: grid;
 }/*# sourceMappingURL=newphoto.css.map */
