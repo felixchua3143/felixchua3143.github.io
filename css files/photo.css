@@ -6,13 +6,14 @@
 body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
+    grid-auto-flow: column;
     background-color: black;
     overflow-y: hidden;
 }
 
 #nav-bar {
     display: inline-grid;
+    width: 25vh;
     background-color: #28282B;
     border-radius: 0 15px 15px 0;
 }
