@@ -7,15 +7,17 @@
   text-decoration: none;
   color: gray;
   list-style-type: none;
+  overflow: auto;
 }
 
 body {
   background-color: black;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body .big-wrapper {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 0.1fr;
   background-color: black;
 }
 body .big-wrapper #nav-bar {
@@ -91,8 +93,10 @@ body .big-wrapper #image-wrapper {
   flex-wrap: wrap;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 2%;
   gap: 1%;
+  overflow-y: scroll;
 }
 body .big-wrapper #image-wrapper img {
   height: 50vh;

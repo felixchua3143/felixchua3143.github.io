@@ -7,6 +7,7 @@
     text-decoration: none;
     color: gray;
     list-style-type: none;
+    overflow: auto;
 }
 
 $default-transition: all 250ms ease;
@@ -19,11 +20,11 @@ $default-transition: all 250ms ease;
 
 body {
     background-color: black;
+    height: fit-content;
 
     .big-wrapper {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 0.1fr;
         background-color: black;
 
         #nav-bar {
@@ -122,8 +123,10 @@ body {
             align-items: center;
             flex-wrap: wrap;
             height: fit-content;
-            margin-bottom: 1%;
+            padding-top: 1%;
+            padding-bottom: 2%;
             gap: 1%;
+            overflow-y: scroll;
 
             img{
                 height: 50vh;
